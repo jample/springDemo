@@ -35,14 +35,14 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       
-
       # check out another repo
       - name: Checkout private tools
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
           repository: jample/custom_prompt
           token: ${{ secrets.GH_PAT}} # `GH_PAT` is a secret that contains your PAT
           path: my-tools
+      
+      - name: Access tools
         run: |
            echo now access no error
-      
