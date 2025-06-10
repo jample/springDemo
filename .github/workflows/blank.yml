@@ -43,4 +43,6 @@ jobs:
           repository: jample/custom_prompt
           token: ${{ secrets.GH_PAT}} # `GH_PAT` is a secret that contains your PAT
           path: my-tools
+        run: |
+           echo now access no error
       
